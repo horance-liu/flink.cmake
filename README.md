@@ -13,4 +13,4 @@ The `PUBLIC, PRIVATE and INTERFACE` keywords can be used to specify both the lin
 
 ## Example
 
-- [fink example](example/README.md)
+- [fink example](example)
