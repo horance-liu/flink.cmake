@@ -1,7 +1,7 @@
 include(CMakeParseArguments)
 
 function(target_do_force_link_libraries target visibility lib)
-  if(WIN32)
+  if(MSVC)
     target_link_libraries(${target} ${visibility} "/WHOLEARCHIVE:${lib}")
   elseif(APPLE)
     target_link_libraries(${target} ${visibility} -Wl,-force_load ${lib})
